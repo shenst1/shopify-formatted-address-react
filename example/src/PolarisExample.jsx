@@ -55,7 +55,7 @@ export default function PolarisExample() {
           {({ setFieldValue, values, handleSubmit, initialValues }) => (
             <Page
               breadcrumbs={[{ content: 'Github', url: 'https://github.com/shenst1/shopify-formatted-address-react' }]}
-              title='React Formatted '
+              title='Shopify React Formatted Address'
               primaryAction={{
                 content: 'Save',
                 disabled: false,
