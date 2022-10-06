@@ -22,7 +22,8 @@ See examples folder or [see it in action](https://shenst1.github.io/shopify-form
  import YourTextField from './YourTextField'
  import YourSelectField from './YourSelectField'
  import YourLineWrapper from './YourLineWrapper
- 
+ import { FormattedAddress, loadCountries } from 'shopify-formatted-address-react'
+
  const allowList = {
   US: ['MA', 'CA', 'WA'],
   CA: ['AB', 'NB', 'ON'],
@@ -128,6 +129,7 @@ useEffect(() => {
   }}
 />
 ```
+### Note: Implementing translations for placeholders is not provided by this library. 
 
 # Props
 
