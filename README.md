@@ -1,5 +1,5 @@
 # shopify-formatted-address-react
-An opinionated address form formatter based on the data contained in the Shopify country service https://country-service.shopifycloud.com/graphql. 
+An opinionated address form formatter based on the data contained in the Shopify graphql country service api `https://country-service.shopifycloud.com/graphql`. 
 
 Reflow, re-label, and populate your input fields based on the country selected or the locale. CSS and field implementation is up to you!
 
