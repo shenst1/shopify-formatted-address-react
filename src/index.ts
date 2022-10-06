@@ -1,3 +1,4 @@
-import MyCounter from './HelloWorld'
+import FormattedAddress from './FormattedAddress'
+import { loadCountries, SUPPORTED_LOCALES } from './countryService'
 
-export { MyCounter }
+export { FormattedAddress, loadCountries, SUPPORTED_LOCALES }

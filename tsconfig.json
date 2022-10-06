@@ -1,9 +1,10 @@
 
 {
-  "include": ["src"],
+  "include": ["src", "src/countryService.ts"],
   "exclude": [
     "dist",
-    "node_modules"
+    "node_modules",
+    "example/src"
   ],
   "compilerOptions": {
     "module": "esnext",

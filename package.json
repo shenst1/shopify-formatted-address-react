@@ -1,7 +1,7 @@
 {
-  "name": "shopify-react-formatted-address",
-  "version": "1.0.0",
-  "description": "Formats, populates, and reflows address components based on Shopify's countries cdn.",
+  "name": "shopify-formatted-address-react",
+  "version": "1.0.1",
+  "description": "Generic way to format, populate, and reflow address components based on Shopify's countries cdn.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
