@@ -4,7 +4,8 @@
   "exclude": [
     "dist",
     "node_modules",
-    "example/src"
+    "example/src",
+    "docs"
   ],
   "compilerOptions": {
     "module": "esnext",
