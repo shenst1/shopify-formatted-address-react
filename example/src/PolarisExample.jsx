@@ -52,7 +52,7 @@ export default function PolarisExample() {
             alert(JSON.stringify(values))
           }}
         >
-          {({ setFieldValue, values, handleSubmit }) => (
+          {({ setFieldValue, values, handleSubmit, initialValues }) => (
             <Page
               breadcrumbs={[{ content: 'Github', url: 'https://github.com/shenst1/shopify-formatted-address-react' }]}
               title='React Formatted '
@@ -83,6 +83,7 @@ export default function PolarisExample() {
                       {
                         content: 'Limit countries',
                         onAction: () => {
+                          setFieldValue('country', initialValues.country)
                           setAllowList({
                             US: ['MA', 'CA', 'WA'],
                             CA: ['AB', 'NB', 'ON'],
