@@ -1,22 +1,22 @@
 # shopify-formatted-address-react
-An opinionated address form layout formatter based on the data contained in the Shopify graphql country service api `https://country-service.shopifycloud.com/graphql`. 
+An opinionated address form layout formatter based on the data contained in the Shopify graphql country service api `https://country-service.shopifycloud.com/graphql`.
 
 Localize, reflow, re-label, and populate your input fields based on the country selected or the locale. CSS and field implementation is up to you!
 
 <img width="330" alt="image" src="https://user-images.githubusercontent.com/3740533/194427724-bfd47506-58f4-489f-baad-1fb5b54524ce.png"> <img width="330" alt="image" src="https://user-images.githubusercontent.com/3740533/194428960-1b296fd8-0ca2-47d9-ab96-9110adce6c9f.png">
 
 
-### NOTE: This library is not associated with Shopify and is not associated with the maintainers of the API. 
+### NOTE: This library is not associated with Shopify and is not associated with the maintainers of the API.
 ### It is highly recommended to keep a cached version of the results you desire to guarantee availability of the data.
 
 
-# Installation 
+# Installation
 
-`npm install shopify-formated-address-react`. 
+`npm install shopify-formated-address-react`.
 
-# Usage 
+# Usage
 
-See examples folder or [see it in action](https://shenst1.github.io/shopify-formatted-address-react/) 
+See examples folder or [see it in action](https://shenst1.github.io/shopify-formatted-address-react/)
 
 ```
  import YourTextField from './YourTextField'
@@ -89,7 +89,7 @@ useEffect(() => {
       options: {
         name: 'country',
         onChange: (val) => {
-          // your application will be responsible for resetting the province if the country is changed. 
+          // your application will be responsible for resetting the province if the country is changed.
           setFieldValue('country', val)
           if (values.province) {
             setFieldValue('province', '')
@@ -129,13 +129,13 @@ useEffect(() => {
   }}
 />
 ```
-### Note: Implementing translations for placeholders is not provided by this library. 
+### Note: Implementing translations for placeholders is not provided by this library.
 
 # Props
 
 ```
 interface FormattedAddressProps {
-  countries: Country[]  
+  countries: Country[]
   currentCountryCode: string
   fields: {
     [index: string]: Input
@@ -143,25 +143,25 @@ interface FormattedAddressProps {
   allowList?: AllowList
   LineWrapper: React.FC<PropsWithChildren>
   lineWrapperOptions?: HTMLAttributes<HTMLElement>
-  
+
 }
 ```
 
-#### countries 
+#### countries
 Pass in countries data provided by your application. Recommend to statically precompile countries data if possible. Import from a static JSON file if this is the easiest.
 
 #### currentCountryCode
 Your application will be responsible for maintaining form state and passing in the currently selected country.
 
-#### fields 
-A dictionary object of form fields matching with the naming convention of Shopify: 
+#### fields
+A dictionary object of form fields matching with the naming convention of Shopify:
 ```
 interface fields {
   address1: {
     component: YourReactFieldInput,
     options: {
       ...anyPropsForYourReactFieldInput
-    } 
+    }
   }
   address2: ...
   city: ...
@@ -184,14 +184,14 @@ interface AllowList  {
 ```
 
 #### LineWrapper
-A Component that takes children. Used for spacing out form rows. 
+A Component that takes children. Used for spacing out form rows.
 
 #### lineWrapperOptions
 Props passed to LineWrapper
 
 # Custom inputs
 Why leave input implementation up to the developer? Form inputs and management will be unique to the application. For example, `address1` may be a
-GoogleAutoComplete input. Or the phone number may be formatted by Cleave.js. This implementation allows for total flexibility on input inplementation. 
+GoogleAutoComplete input. Or the phone number may be formatted by Cleave.js. This implementation allows for total flexibility on input inplementation.
 
 
 

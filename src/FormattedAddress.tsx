@@ -24,14 +24,14 @@ interface Country {
   zones: { name: string; code: string }[]
 }
 
-type AllowList = {
+interface AllowList  {
   [index: string]: string[]
 }
 
 interface InputProps {
   options?: { label: string; value: string }[]
 }
-type Input = {
+interface Input  {
   component: React.FC<InputProps>
   options?: HTMLAttributes<HTMLInputElement>
 }
@@ -71,11 +71,9 @@ export default function FormattedAddress({
             options={countries
               .filter((country) => (allowList ? Object.keys(allowList).includes(country.code) : country))
               .map((country) => ({ label: country.name, value: country.code }))}
-            // onChange={({ target: { value } }) => onCountryChange(value)}
             {...fieldOptions}
           />
-          //   {countries.map((country) => (<option key={country.code} value={country.code}>{country.name}</option>))}
-          // </Field>
+         
         )
 
       case 'zone':
