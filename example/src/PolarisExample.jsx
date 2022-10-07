@@ -83,11 +83,13 @@ export default function PolarisExample() {
                       {
                         content: 'Limit countries',
                         onAction: () => {
-                          setFieldValue('country', initialValues.country)
-                          setAllowList({
+                          const allowList = {
                             US: ['MA', 'CA', 'WA'],
                             CA: ['AB', 'NB', 'ON'],
-                          })
+                          }
+                          setFieldValue('country', initialValues.country)
+                          alert('Country data limited to:' + JSON.stringify(allowList, null, 2))
+                          setAllowList(allowList)
                         },
                       },
                       {
@@ -160,7 +162,7 @@ export default function PolarisExample() {
                             zone: {
                               component: FormikSelectField,
                               options: {
-                                placeholder: 'Select province',
+                                placeholder: 'Select province', // you will need to provide your own translations for placeholders
                                 name: 'province',
                                 type: 'select',
                               },
