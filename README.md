@@ -193,7 +193,7 @@ Props passed to LineWrapper
 
 # Custom inputs
 Why leave input implementation up to the developer? Form inputs and management will be unique to the application. For example, `address1` may be a
-GoogleAutoComplete input. Or the phone number may be formatted by Cleave.js. This implementation allows for total flexibility on input inplementation.
+Google Autocomplete input from the [@react-google-maps/api](https://react-google-maps-api-docs.netlify.app/). Or the `phone` number may be formatted by [Cleave.js](https://github.com/nosir/cleave.js). 
 
 
 
