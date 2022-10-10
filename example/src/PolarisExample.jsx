@@ -65,6 +65,7 @@ export default function PolarisExample() {
                 content: locale,
                 onAction: () => setLocale(locale),
               }))}
+              fullWidth
             >
               <Layout>
                 <Layout.AnnotatedSection
