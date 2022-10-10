@@ -6,8 +6,9 @@ Localize, reflow, re-label, and populate your input fields based on the country 
 <img width="330" alt="image" src="https://user-images.githubusercontent.com/3740533/194427724-bfd47506-58f4-489f-baad-1fb5b54524ce.png"> <img width="330" alt="image" src="https://user-images.githubusercontent.com/3740533/194428960-1b296fd8-0ca2-47d9-ab96-9110adce6c9f.png">
 
 
-### NOTE: This library is not associated with Shopify and is not associated with the maintainers of the API.
-### It is highly recommended to keep a cached version of the results you desire to guarantee availability of the data.
+> #### ⚠️ This library is not associated with Shopify and is not associated with the maintainers of the API.
+> #### It is highly recommended to keep a cached version of the results you desire to guarantee availability of the data.
+> #### You may be more interested in the Shopify package [@shopify/address](https://github.com/Shopify/quilt/tree/main/packages/address) if you want something more generic. 
 
 
 # Installation
@@ -129,7 +130,8 @@ useEffect(() => {
   }}
 />
 ```
-### Note: Implementing translations for placeholders is not provided by this library.
+
+> #### Note: Implementing translations for placeholders is not provided by this library.
 
 # Props
 
